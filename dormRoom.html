@@ -18,9 +18,14 @@
 
 tw-link, 
 .enchantment-link { color: #FF0075;} 
-.visited { color: #FF0075; }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="yourDormRoom" tags="" position="500,150" size="100,100">It&#39;s Thanksgiving. You are a in your dorm room [[alone -&gt; decision]] as your roomate, and most of your friends, have already flew back home to celebrate the holiday with their family. You, however, cannot do the same because your hometown is in the other side of the globe, and Vietnam doesn&#39;t have a tradition of celebrating this holiday anyways. </tw-passagedata><tw-passagedata pid="2" name="thePit" tags="" position="325,325" size="100,100">As expected, there are not many students at the Pit - one of the better dining halls at your university. You need to decide between sitting [[upstairs -&gt; upstairs]] or [[downstairs -&gt; downstairs]]. 
+.visited { color: #FF0075; }
 
-&lt;img src=&quot;https://github.com/deunogo/twinegame/images/pitDown2.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name=" downstairs" tags="" position="325,475" size="100,100">You realized downstairs actually looks kind of depressing and lacking of natural light, but too lazy to walk up again so you just put your stuff down to a random table and proceed to the food counters to grab something to eat. 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="yourDormRoom" tags="" position="500,150" size="100,100">It&#39;s Thanksgiving. You are a in your dorm room [[alone -&gt; decision]] as your roomate, and most of your friends, have already flew back home to celebrate the holiday with their family. You, however, cannot do the same because your hometown is in the other side of the globe, and Vietnam doesn&#39;t have a tradition of celebrating this holiday anyways. </tw-passagedata><tw-passagedata pid="2" name="thePit" tags="" position="325,325" size="100,100">As expected, there are not many students at the Pit - one of the better dining halls at your university. You need to decide between sitting [[upstairs -&gt; upstairs]] or [[downstairs -&gt; downstairs]]. 
+
+&lt;img src=&quot;https://deunogo.github.io/twinegame/images/pitDown2.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name=" downstairs" tags="" position="325,475" size="100,100">You realized downstairs actually looks kind of depressing and lacking of natural light, but too lazy to walk up again so you just put your stuff down to a random table and proceed to the food counters to grab something to eat. 
 
 Your level of homesickness is still $homesickness.
 
@@ -28,7 +33,7 @@ Your level of homesickness is still $homesickness.
 [[Wonton Soup -&gt; wontonSoup]]
 [[Burrito Bowl -&gt; burritoBowl]]
 
-&lt;img src=&quot;https://github.com/deunogo/twinegame/blob/main/images/pitDown.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name=" upstairs" tags="" position="150,450" size="100,100"> (set: $homesickness to it - 1)
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/pitDown.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name=" upstairs" tags="" position="150,450" size="100,100"> (set: $homesickness to it - 1)
 
 Upstairs, there is a glassroof which allows the sun to shinethrough, which makes you realized the weather is actually quite nice and you start feeling better. Placing your stuff in one of the tables, you head to the food counters to pick out something to eat. Your current level of homesickness has decreased to $homesickness
 
@@ -36,7 +41,7 @@ Upstairs, there is a glassroof which allows the sun to shinethrough, which makes
 [[Wonton Soup -&gt; wontonSoup]]
 [[Burrito Bowl -&gt; burritoBowl]]
 
-&lt;img src=&quot;https://github.com/deunogo/twinegame/blob/main/images/pitUp.jpeg&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name=" decision" tags="" position="500,275" size="100,100">
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/pitUp.jpeg&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name=" decision" tags="" position="500,275" size="100,100">
 You decide that you have to do something besides from sitting in your room and getting overwhelmed with homesickness.
 
 Your current level of homesickness if $homesickness
@@ -46,7 +51,7 @@ Your current level of homesickness if $homesickness
 [[Take a walk around campus -&gt; walk]]
 </tw-passagedata><tw-passagedata pid="6" name="tunnel" tags="" position="675,325" size="100,100">You school has a underground tunnel system that allows student to travel between buildings without having to be outside, which is especially helpful in the snowy winter days. Despite having been studying at the university for almost 2 months, you still are not accustomed to this tunnel system and often find yourself lost in the middle of going to classes. Therefore, taking advantage of your days off, you determine to get yourself used to this [[pathways -&gt; tunnelCont]]. Your current level of homesickness if $homesickness. 
 
-</tw-passagedata><tw-passagedata pid="7" name=" chickenTenders" tags="" position="175,700" size="100,100">This dish is too oily and salty for your liking. You felt dissapointed, but chose to move on.(if:$homesickness &lt;= 2)[Your homesickness has almost gone by now and you are ready to go back to you room]
+</tw-passagedata><tw-passagedata pid="7" name=" chickenTenders" tags="" position="175,725" size="100,100">This dish is too oily and salty for your liking. You felt dissapointed, but chose to move on.(if:$homesickness &lt;= 2)[Your homesickness has almost gone by now and you are ready to go back to you room]
 
 You decide to:
 
@@ -58,7 +63,7 @@ You decide to:
 
 [[Go explore the tunnel system at your university -&gt;tunnel]]
 [[Take a walk outside -&gt; walk]]
-(if:$homesickness &lt;= 2)[[Go back to your room -&gt; end]]</tw-passagedata><tw-passagedata pid="9" name=" wontonSoup" tags="" position="325,700" size="100,100">(set: $homesickness to it - 1)
+(if:$homesickness &lt;= 2)[[Go back to your room -&gt; end]]</tw-passagedata><tw-passagedata pid="9" name=" wontonSoup" tags="" position="325,675" size="100,100">(set: $homesickness to it - 1)
  
 The hot soup warms you up from the inside out, which makes you feel much better after walking through the cold winds to get to the dining hall. Moreover, this is a dish your mom usually makes for you in the cold winter days, and whenever you get sick. It&#39;s your comfort dish! Your current level of homesickness has decreased to $homesickness. (if:$homesickness &lt;= 2)[Your homesickness has almost gone by now and you are ready to go back to you room]
 
@@ -72,7 +77,12 @@ You realized the weather outside is quite nice, with the sun out and everything.
 
 You decide to take you [[camera -&gt; Camera]] out and take some pictures!
 
-Your current level of homesickness if $homesickness.</tw-passagedata><tw-passagedata pid="11" name="startup" tags="startup" position="500,25" size="100,100">{(set:$homesickness to 5)}</tw-passagedata><tw-passagedata pid="12" name=" tunnelCont" tags="" position="875,450" size="100,100">After walking randomly for a while, you starting to feel suffocated and want to get outside and breath some fresh air. You are standing in an intersection and need to make a decision to whether turn [[left -&gt; Left]] or [[right -&gt; Right]]</tw-passagedata><tw-passagedata pid="13" name=" Left" tags="" position="550,550" size="100,100">You don&#39;t realize this place, and once again are lost. Feeling a little bit frustrated, you come back to the [[intersection -&gt; tunnelCont]]. </tw-passagedata><tw-passagedata pid="14" name=" Right" tags="" position="750,575" size="100,100">(set: $homesickness to it - 1)
+Your current level of homesickness if $homesickness.
+
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/walk1.jpg&quot;&gt;
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/walk2.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="11" name="startup" tags="startup" position="500,25" size="100,100">{(set:$homesickness to 5)}</tw-passagedata><tw-passagedata pid="12" name=" tunnelCont" tags="" position="875,450" size="100,100">After walking randomly for a while, you starting to feel suffocated and want to get outside and breath some fresh air. You are standing in an intersection and need to make a decision to whether turn [[left -&gt; Left]] or [[right -&gt; Right]]</tw-passagedata><tw-passagedata pid="13" name=" Left" tags="" position="550,550" size="100,100">You don&#39;t realize this place, and once again are lost. Feeling a little bit frustrated, you come back to the [[intersection -&gt; tunnelCont]]. 
+
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/tunnelLeft.jpeg&quot;&gt;</tw-passagedata><tw-passagedata pid="14" name=" Right" tags="" position="750,575" size="100,100">(set: $homesickness to it - 1)
 
 You have been here before and quickly identify the exit to ground level.
 
@@ -80,7 +90,11 @@ Stepping outside, breathing in the fresh air, and feeling somewhat more familiar
 
 (if:$homesickness &lt;= 2)[[Go back to your room -&gt; end]]
 [[Go grab something at the dining hall -&gt;thePit]]
-[[Take a walk around campus -&gt; walk]]</tw-passagedata><tw-passagedata pid="15" name=" end" tags="" position="475,950" size="100,100">Your room doesn&#39;t seem that empty anymore. Looking out the window and staring at your favorite view of the city, you know that every sadness is temporary and you will get over it sooner or later.</tw-passagedata><tw-passagedata pid="16" name=" Camera" tags="" position="850,750" size="100,100">This is the camera that you parents purchased in 2006 and just passed it down to you. It&#39;s an old model, a Fujifilm Finepix F30D. Out of curiostiy, you go through the media files and found some [[old video -&gt; oldVids]]. </tw-passagedata><tw-passagedata pid="17" name=" oldVids" tags="" position="700,950" size="100,100">It was a video of your younger self. It actually took you a minute or two to realize the baby in the video was actually you. Overwhelming with a sense of nostalgia, you realize how far you have come and how you will always have this memory to look back to. 
+[[Take a walk around campus -&gt; walk]]
+
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/tunnelRight.jpeg&quot;&gt;</tw-passagedata><tw-passagedata pid="15" name=" end" tags="" position="550,1125" size="100,100">Your room doesn&#39;t seem that empty anymore. Looking out the window and staring at your favorite view of the city, you know that every sadness is temporary and you will get over it sooner or later.
+
+&lt;img src=&quot;https://github.com/deunogo/twinegame/images/dormView.jpeg&quot;&gt;</tw-passagedata><tw-passagedata pid="16" name=" Camera" tags="" position="850,750" size="100,100">This is the camera that you parents purchased in 2006 and just passed it down to you. It&#39;s an old model, a Fujifilm Finepix F30D. Out of curiostiy, you go through the media files and found some [[old video -&gt; oldVids]]. </tw-passagedata><tw-passagedata pid="17" name=" oldVids" tags="" position="700,950" size="100,100">It was a video of your younger self. It actually took you a minute or two to realize the baby in the video was actually you. Overwhelming with a sense of nostalgia, you realize how far you have come and how you will always have this memory to look back to. 
 (set:$homesickness to it - 1)
 
 Your level of homesickness has decreased to $homesickness. (if:$homesickness &lt;= 2)[Your homesickness has almost gone by now and you are ready to go back to you room.]
